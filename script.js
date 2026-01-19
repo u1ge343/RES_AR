@@ -29,22 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // OPTIONAL: Add simple tap interaction to scale the model
 // If you want the user to tap to enlarge or shrink the model
 
-document.addEventListener("click", (event) => {
-  // Only if a model exists
-  const modelEl = document.querySelector("a-entity[gltf-model]");
-  if (!modelEl) return;
-
-  // Toggle scale between two states
-  const currentScale = modelEl.getAttribute("scale");
-  if (currentScale.x < 1) {
-    modelEl.setAttribute("scale", "1 1 1");
-  } else {
-    modelEl.setAttribute("scale", "0.5 0.5 0.5");
-  }
-
-  console.log("Tapped — model scale toggled");
-});
-
 AFRAME.registerComponent("rotate-and-hover", {
   tick: function (time, delta) {
     // Smooth horizontal rotation
