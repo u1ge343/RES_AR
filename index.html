@@ -21,34 +21,25 @@
     arjs="sourceType: webcam; debugUIEnabled: false;"
     vr-mode-ui="enabled: false"
   >
-  <a-marker preset="hiro">
-
-  <!-- CENTERED CONTAINER -->
-  <a-entity
-    id="container"
+    <!-- Hiro marker -->
+    <a-marker preset="hiro">
+      <!-- 3D model -->
+      <a-entity
+    id="foodModel"
+    gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/a.glb)"
+    scale="8 8 8"
     position="0 0 0"
-    scale="2 2 2"
-    rotation="0 0 0">
-
-    <!-- Model A -->
+    rotation="0 0 0"
+  ></a-entity>
+      
     <a-entity
-      gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/a.glb)"
-      position="0 0 0"
-      scale="1 1 1"
-    ></a-entity>
-
-    <!-- Model B -->
-    <a-entity
-      gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/b.glb)"
-      position="0 1 0"
-      scale="1 1 1"
-    ></a-entity>
-
-  </a-entity>
-
-</a-marker>
-
-
+    gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/b.glb)"
+    scale="3 3 3"
+    position="0 0.9 0"
+    rotation="0 0 0"
+  ></a-entity>
+      
+    </a-marker>
 
     <!-- Camera -->
     <a-entity camera></a-entity>
@@ -57,4 +48,5 @@
   <!-- Optional JS -->
   <script src="script.js"></script>
 </body>
-</html>
+</html> 
+
