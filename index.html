@@ -21,26 +21,33 @@
     arjs="sourceType: webcam; debugUIEnabled: false;"
     vr-mode-ui="enabled: false"
   >
-    <a-marker preset="hiro">
+  <a-marker preset="hiro">
 
-  <!-- Model A -->
+  <!-- CENTERED CONTAINER -->
   <a-entity
-    id="foodModel"
-    gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/a.glb)"
-    scale="16 16 16"
+    id="container"
     position="0 0 0"
-    rotation="0 0 0"
-  ></a-entity>
+    scale="2 2 2"
+    rotation="0 0 0">
 
-  <!-- Model B -->
-  <a-entity
-    gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/b.glb)"
-    scale="6 6 6"
-    position="0 0.9 0"
-    rotation="0 0 0"
-  ></a-entity>
+    <!-- Model A -->
+    <a-entity
+      gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/a.glb)"
+      position="0 0 0"
+      scale="1 1 1"
+    ></a-entity>
+
+    <!-- Model B -->
+    <a-entity
+      gltf-model="url(https://raw.githubusercontent.com/u1ge343/RES_AR/refs/heads/main/assets/b.glb)"
+      position="0 1 0"
+      scale="1 1 1"
+    ></a-entity>
+
+  </a-entity>
 
 </a-marker>
+
 
 
     <!-- Camera -->
